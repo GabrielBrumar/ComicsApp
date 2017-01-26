@@ -38,7 +38,7 @@ public class CharactersPresenter implements CharactersContract.Presenter{
             @Override
             public void onNext(CharacterResponseData characterResponseData) {
 
-               Log.d("Data", characterResponseData.getData().getResults().get(0).getName());
+           view.showData(characterResponseData.getData());
             }
         });
 
