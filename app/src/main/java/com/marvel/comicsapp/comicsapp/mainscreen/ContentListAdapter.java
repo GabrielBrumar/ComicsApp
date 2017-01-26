@@ -40,7 +40,7 @@ public class ContentListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
         CustomViewHolder viewHolder = (CustomViewHolder)holder;
         ImageResource thumbnail = marvelCharacter.getThumbnail();
-        Picasso.with(context).load(thumbnail.getPath()+"/landscape_large."+thumbnail.getExtension()).into(viewHolder.cardImage);
+        Picasso.with(context).load(thumbnail.getPath()+"/landscape_large."+thumbnail.getExtension()).fit().into(viewHolder.cardImage);
         viewHolder.imageName.setText(marvelCharacter.getName()+ "\n" + marvelCharacter.getDescription());
     }
 
