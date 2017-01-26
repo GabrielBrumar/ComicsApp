@@ -4,9 +4,9 @@
     android:id="@+id/activity_characters"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.marvel.comicsapp.comicsapp.mainscreen.CharactersActivity">
+    tools:context="com.marvel.comicsapp.screens.mainscreen.CharactersActivity">
    <include
-       layout="@layout/activity_main_app_bar"
+       layout="@layout/activity_characters_app_bar"
        android:layout_width="match_parent"
        android:layout_height="match_parent" />
 </RelativeLayout>
